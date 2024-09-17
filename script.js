@@ -26,3 +26,10 @@ let hora = hours+ ":"+minutes
 
 console.log(year, month, day)
 console.log(hours, minutes, seconds)
+
+let formated = (time.toLocaleString('pt-Br', {
+    year:'2-digit',
+    month:'long',
+    day:'2-digit'
+}));
+console.log(formated);
