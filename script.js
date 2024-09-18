@@ -30,6 +30,8 @@ console.log(hours, minutes, seconds)
 let formated = (time.toLocaleString('pt-Br', {
     year:'2-digit',
     month:'long',
-    day:'2-digit'
+    day:'2-digit',
+    timeZoneName: 'long',
+    timeZone: 'UTC'
 }));
 console.log(formated);
